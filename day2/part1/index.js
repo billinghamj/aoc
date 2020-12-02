@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 
-const inputRaw = await fs.readFile('./input', 'utf8');
+const inputRaw = await fs.readFile('../input', 'utf8');
 
 const regex = /^(?<min>\d+)-(?<max>\d+) (?<letter>[a-z]): (?<password>[a-z]+)$/;
 
