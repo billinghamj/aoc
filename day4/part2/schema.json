@@ -1,0 +1,83 @@
+{
+	"type": "object",
+	"additionalProperties": false,
+
+	"required": [
+		"byr",
+		"iyr",
+		"eyr",
+		"hgt",
+		"hcl",
+		"ecl",
+		"pid"
+	],
+
+	"properties": {
+		"byr": {
+			"type": "integer",
+			"minimum": 1920,
+			"maximum": 2002
+		},
+
+		"iyr": {
+			"type": "integer",
+			"minimum": 2010,
+			"maximum": 2020
+		},
+
+		"eyr": {
+			"type": "integer",
+			"minimum": 2020,
+			"maximum": 2030
+		},
+
+		"hgt": {
+			"type": "object",
+			"additionalProperties": false,
+			"minProperties": 1,
+			"maxProperties": 1,
+
+			"properties": {
+				"cm": {
+					"type": "integer",
+					"minimum": 150,
+					"maximum": 193
+				},
+
+				"in": {
+					"type": "integer",
+					"minimum": 59,
+					"maximum": 76
+				}
+			}
+		},
+
+		"hcl": {
+			"type": "string",
+			"pattern": "^#[\\da-f]{6}$"
+		},
+
+		"ecl": {
+			"type": "string",
+
+			"enum": [
+				"amb",
+				"blu",
+				"brn",
+				"gry",
+				"grn",
+				"hzl",
+				"oth"
+			]
+		},
+
+		"pid": {
+			"type": "string",
+			"pattern": "^\\d{9}$"
+		},
+
+		"cid": {
+			"type": "integer"
+		}
+	}
+}
