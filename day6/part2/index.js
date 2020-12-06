@@ -2,12 +2,6 @@ import fs from 'fs/promises';
 
 const inputRaw = await fs.readFile('../input', 'utf8');
 
-const fullSet = new Set(
-	new Array(26)
-		.fill(null)
-		.map((_, i) => String.fromCharCode(65 + i))
-);
-
 const sum = inputRaw
 	.toUpperCase()
 	.trim()
@@ -15,9 +9,9 @@ const sum = inputRaw
 	.map(g => g.split('\n'))
 	.map(g => g
 		.map(l => new Set(l.split('')))
-		.reduce(intersect, fullSet)
+		.reduce(intersect)
 		.size
-	).reduce((acc, cur) => acc + cur, 0);
+	).reduce((a, b) => a + b);
 
 console.log(sum);
 
