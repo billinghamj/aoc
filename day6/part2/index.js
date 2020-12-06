@@ -6,8 +6,8 @@ const sum = inputRaw
 	.toUpperCase()
 	.trim()
 	.split('\n\n')
-	.map(g => g.split('\n'))
 	.map(g => g
+		.split('\n')
 		.map(l => new Set(l.split('')))
 		.reduce(intersect)
 		.size
