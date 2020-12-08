@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "aoc-2020-day8-part1",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js"
+  }
+}
