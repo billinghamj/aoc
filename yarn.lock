@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+donhash@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/donhash/-/donhash-1.0.3.tgz#a1729fbf03de2107194ebcd35f2c97c7bbaaf8e1"
+  integrity sha512-WBx6+W3Jbluywz3k9heXqjiYJNlqkUUmnEDy4WkdOivW+Z8SH9nskqesrtHWIYPxJJ5iHJVywLW++pFV7+rwtw==
+
 generate-function@^2.0.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/generate-function/-/generate-function-2.3.1.tgz#f069617690c10c868e73b8465746764f97c3479f"
